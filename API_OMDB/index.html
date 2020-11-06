@@ -7,8 +7,11 @@
     <body>
         <div class="navbar">
 
-            <div class="navLeft">
+            <div class="navLogo">
                 <a href=#logo><img class="navItem" alt="logo" src="https://logos-download.com/wp-content/uploads/2016/03/Netflix_logo.png"></a>
+            </div>
+
+            <div class="navLeft">
                 <a href=#home><div class="navItem">Home</div></a>
                 <a href=#tvshows><div class="navItem">TV Shows</div></a>
                 <a href=#movies><div class="navItem">Movies</div></a>
@@ -22,7 +25,16 @@
             </div>
         </div>
 
-        <div id=container></div>
+        <div class="scrollRight" onclick="myScrollRight(event)">
+            <button>Right</button>
+        </div>
+
+        <div class="scrollLeft" onclick="myScrollLeft(event)">
+            <button>Left</button>
+        </div>
+
+        <div id='container' ></div>
+
 
         <script src="script.js"></script>
     </body>
