@@ -1,12 +1,16 @@
 let container = document.getElementById('container');
 let query = document.getElementById('search').value ||"Power"
 let page = 1
+let last = '';
 let containerLocation = document.getElementById('container').style.left
 
 function search(){
     query = document.getElementById('search').value ||"Power"
     let url = `http://www.omdbapi.com/?page=${page}&s=${query}&apikey=d961dcc`
-    // container.innerHTML=''
+//    if(query !== last){
+//     page = 1
+//     container.innerHTML=''
+//    }
 
     fetch(url) // promised response
 
